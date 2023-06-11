@@ -13,6 +13,6 @@ class DelayReason extends Model
 
     public function preseance()
     {
-        return $this->belongsToMany(Preseance::class);
+        return $this->hasMany(Preseance::class);
     }
 }

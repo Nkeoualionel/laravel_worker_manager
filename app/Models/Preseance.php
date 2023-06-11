@@ -13,6 +13,6 @@ class Preseance extends Model
 
     public function delay_reasons()
     {
-        return $this->hasOne(DelayReason::class);
+        return $this->belongsTo(DelayReason::class);
     }
 }
